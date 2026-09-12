@@ -74,7 +74,7 @@ module.exports = {
      * couldn't run.
      * @type {string}
      */
-    APP_URL: process.env.APP_URL || 'https://ahmadshahzadmdbot-11e43a5a3e06.herokuapp.com',
+    APP_URL: process.env.APP_URL || 'https://cyberteam913bot-9b07c11e464e.herokuapp.com',
 
     // ═══════════════════════════════════════════
     //  🔥 GITHUB SETTINGS (MANDATORY)

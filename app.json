@@ -34,7 +34,7 @@
     },
     "APP_URL": {
       "description": "This app's own public Heroku URL — used to self-ping every ~20 min so the Eco dyno doesn't sleep and silently drop every WhatsApp connection",
-      "value": "https://ahmadshahzadmdbot-11e43a5a3e06.herokuapp.com",
+      "value": "https://cyberteam913bot-9b07c11e464e.herokuapp.com",
       "required": false
     },
     "MESSAGE": {
