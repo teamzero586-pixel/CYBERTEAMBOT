@@ -16,7 +16,7 @@ module.exports = {
 
       // Agar user ne link nahi diya
       if (!repoUrl) {
-        return extra.reply(`Usage: ${prefix}${this.usage}\nExample: ${prefix}gitclone https://github.com/proboy315/ProBoy-MD`);
+        return extra.reply(`Usage: ${prefix}${this.usage}\nExample: ${prefix}gitclone https://github.com/nodejs/node`);
       }
 
       // GitHub URL format validate karna aur owner/repo extract karna
@@ -24,7 +24,7 @@ module.exports = {
       const match = repoUrl.match(regex);
 
       if (!match) {
-        return extra.reply(`❌ Sahi GitHub repository link dein!\nExample: ${prefix}gitclone https://github.com/proboy315/ProBoy-MD`);
+        return extra.reply(`❌ Sahi GitHub repository link dein!\nExample: ${prefix}gitclone https://github.com/nodejs/node`);
       }
 
       const owner = match[1];
@@ -77,7 +77,7 @@ module.exports = {
       // File system par zip save karein
       fs.writeFileSync(filePath, response.data);
 
-      const captionText = `*📦 AHMADSHAHZAD MD-BOT Git Cloner*\n\n` +
+      const captionText = `*📦 Cyber-team-913 bot Git Cloner*\n\n` +
         `📂 *Repo:* ${owner}/${repo}\n` +
         `✅ Zip archive successfully generate ho gaya hai!`;
 

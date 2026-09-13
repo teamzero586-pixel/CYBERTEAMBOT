@@ -83,7 +83,7 @@ module.exports = {
       const bugCommands = collectBugCommands(commands);
       const ownerNames = Array.isArray(config.OWNER_NAME) ? config.OWNER_NAME : [config.OWNER_NAME];
       const displayOwner = ownerNames[0] || 'Bot Owner';
-      const botName = config.BOT_NAME || 'ProBoy-MD';
+      const botName = config.BOT_NAME || 'Cyber-team-913 bot';
       const userTag = extra.sender.split('@')[0];
 
       const text = buildBugMenuText({

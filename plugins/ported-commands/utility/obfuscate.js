@@ -65,7 +65,7 @@ module.exports = {
             let originalCode = fs.readFileSync(inputPath, 'utf8');
 
             // Replace dummy "Shahan" placeholders with actual bot name
-            const botName = config.BOT_NAME || 'ProBoy-MD';
+            const botName = config.BOT_NAME || 'Cyber-team-913 bot';
             originalCode = originalCode.replace(/Shahan(_\d+)?/g, botName);
 
             const result = JavaScriptObfuscator.obfuscate(originalCode, {

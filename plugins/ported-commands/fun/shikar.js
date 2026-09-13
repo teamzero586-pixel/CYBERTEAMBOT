@@ -37,16 +37,16 @@ const PRAISES = [
 ];
 
 const PUNISHMENTS = [
-  '🎤 Abhi voice note mein "Main AHMADSHAHZAD MD-BOT ka fan hoon" kaho!',
+  '🎤 Abhi voice note mein "Main Cyber-team-913 bot ka fan hoon" kaho!',
   '🤸 10 jumping jacks karo aur video bhejo!',
   '📸 Apni sabse funny selfie abhi group mein bhejo!',
   '✍️ "Main galat tha/thi" 10 baar type karo!',
   '🎵 30 second ka gana sunao voice note mein!',
   '🙏 Group ke har member ko sorry bolo!',
-  '👑 AHMADSHAHZAD MD-BOT ki tarif mein 5 lines likho!',
+  '👑 Cyber-team-913 bot ki tarif mein 5 lines likho!',
   '😂 Apna sab se sharmindagi wala moment share karo!',
   '🏃 Ghar mein 3 chakkar lagao — proof chahiye!',
-  '📢 Apna WhatsApp status lagao "AHMADSHAHZAD MD-BOT best bot hai" — 1 ghante ke liye!',
+  '📢 Apna WhatsApp status lagao "Cyber-team-913 bot best bot hai" — 1 ghante ke liye!',
 ];
 
 module.exports = {
@@ -85,7 +85,7 @@ module.exports = {
 
       // Dramatic targeting effect
       const aimText =
-        `*🎯 AHMADSHAHZAD MD-BOT — SHIKAR MODE*\n` +
+        `*🎯 Cyber-team-913 bot — SHIKAR MODE*\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         `👁️ Target lock ho raha hai...\n` +
         `@${targetPhone} 🔴\n\n` +
@@ -129,13 +129,13 @@ module.exports = {
       }
 
       const finalText =
-        `*${emoji} ${title} — AHMADSHAHZAD MD-BOT*\n` +
+        `*${emoji} ${title} — Cyber-team-913 bot*\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         `🎯 *Target:* @${targetPhone}\n` +
         `👑 *Owner ka Hukum!*\n\n` +
         `${content}\n\n` +
         `━━━━━━━━━━━━━━━━━━━━\n` +
-        `⚡ *Powered by AHMADSHAHZAD MD-BOT*`;
+        `⚡ *Powered by Cyber-team-913 bot*`;
 
       await sock.sendMessage(chatId, {
         text: finalText,

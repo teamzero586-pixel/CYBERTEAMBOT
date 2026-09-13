@@ -15,7 +15,7 @@ module.exports = {
       // Agar user ne topic nahi diya
       if (!topic) {
         return extra.reply(
-          `*📚 AHMADSHAHZAD MD-BOT Deep Research*\n\n` +
+          `*📚 Cyber-team-913 bot Deep Research*\n\n` +
           `Sahi tareeqa:\n` +
           `\`${prefix}research Baileys WhatsApp bot architecture aur performance optimization\`\n\n` +
           `_Jis topic par research karni ho, uska naam ya sawal likhein._`
@@ -38,7 +38,7 @@ module.exports = {
         return extra.reply(`❌ Research report generate nahi ho saki. Dobara try karein.`);
       }
 
-      const formattedReply = `*🔬 AHMADSHAHZAD MD-BOT Research Report*\n\n` +
+      const formattedReply = `*🔬 Cyber-team-913 bot Research Report*\n\n` +
         `📌 *Topic:* ${topic}\n\n` +
         `${researchReport}`;
 

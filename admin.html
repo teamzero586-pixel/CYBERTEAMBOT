@@ -295,6 +295,26 @@ function authHeaders() {
     return { 'Content-Type': 'application/json', 'x-admin-code': adminCode };
 }
 
+async function resetBrand(number) {
+    if (!confirm(`Reset +${number} back to config.js defaults? This clears its saved custom name/image/owner-number/channel.`)) return;
+    try {
+        const res = await fetch('/api/admin/reset-brand', {
+            method: 'POST',
+            headers: authHeaders(),
+            body: JSON.stringify({ number })
+        });
+        const data = await res.json();
+        if (res.ok) {
+            alert(`✅ ${data.message}`);
+            loadUsers();
+        } else {
+            alert(`❌ ${data.error || 'Failed to reset'}`);
+        }
+    } catch (e) {
+        alert(`❌ Network error: ${e.message}`);
+    }
+}
+
 async function checkDbStatus() {
     const banner = document.getElementById("dbStatusBanner");
     try {
@@ -334,6 +354,7 @@ async function loadUsers() {
                         ${b.ownerNumber ? `<div>👑 Owner: +${b.ownerNumber}</div>` : ''}
                         ${u.personalLink ? `<div class="jid">🔗 <a href="${u.personalLink}" target="_blank" style="color:#4d96ff;">${u.personalLink}</a></div>` : ''}
                     </div>
+                    <button onclick="resetBrand('${u.number}')" style="margin-left:auto; background:#e74c3c; color:#fff; border:none; border-radius:6px; padding:6px 12px; font-size:12px; cursor:pointer; white-space:nowrap;">Reset to defaults</button>
                 </div>` : '';
             return `
             <div class="user-row" style="flex-direction:column; align-items:stretch;">

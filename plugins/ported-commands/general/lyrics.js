@@ -33,7 +33,7 @@ module.exports = {
       const lyrics = data.lyrics;
 
       // Agar lyrics bohot lambey hon toh text truncate ya split ho sakta hai, lekin aam taur par yeh fit aa jate hain
-      const resultText = `*🎵 AHMADSHAHZAD MD-BOT Lyrics Finder*\n\n` +
+      const resultText = `*🎵 Cyber-team-913 bot Lyrics Finder*\n\n` +
         `🎤 *Title:* ${title}\n` +
         `👤 *Artist:* ${artist}\n\n` +
         `📜 *Lyrics:*\n${lyrics}`;

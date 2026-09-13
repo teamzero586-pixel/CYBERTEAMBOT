@@ -107,7 +107,7 @@ cmd({
 }, async (conn, mek, m, { reply }) => {
     try {
         const brand = conn.brand || null;
-        const botDisplayName = (brand && brand.botName) || config.BOT_NAME || 'A⃟𝐇ΜΔD̰̃~𝐌𝐃-𝐁☯︎𝐓';
+        const botDisplayName = (brand && brand.botName) || config.BOT_NAME || 'Cyber-team-913 bot';
         const channelJid = (brand && brand.channelJid) || config.CHANNEL_JID;
 
         let grouped = {};

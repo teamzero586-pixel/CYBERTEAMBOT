@@ -15,7 +15,7 @@ module.exports = {
       // Agar user ne task nahi diya
       if (!task) {
         return extra.reply(
-          `*🤖 AHMADSHAHZAD MD-BOT AI Agent*\n\n` +
+          `*🤖 Cyber-team-913 bot AI Agent*\n\n` +
           `Sahi tareeqa:\n` +
           `\`${prefix}agent Ek naya WhatsApp sticker command feature design aur code karo jo error handling ke sath ho\`\n\n` +
           `_Apna complex task ya goal tafseel se likhein._`
@@ -45,7 +45,7 @@ Provide your response in this format:
         return extra.reply(`❌ AI Agent task complete nahi kar saka. Task ko thora clear kar ke dobara try karein.`);
       }
 
-      const formattedReply = `*🧠 AHMADSHAHZAD MD-BOT Autonomous Agent*\n\n` +
+      const formattedReply = `*🧠 Cyber-team-913 bot Autonomous Agent*\n\n` +
         `🎯 *Task:* ${task}\n\n` +
         `${agentOutput}`;
 

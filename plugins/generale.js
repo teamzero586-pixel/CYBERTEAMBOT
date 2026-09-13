@@ -29,7 +29,7 @@ async(conn, mek, m, { from, reply, myquoted }) => {
 
         // 3. Message Final Stylé
         const pingMsg = `
-*👑 AHMADSHAHZAD MD-BOT UPTIME 👑* ⚡
+*👑 Cyber-team-913 bot UPTIME 👑* ⚡
 
 * UPTIME :❯  ${latency}*
 
@@ -58,7 +58,7 @@ cmd({
 async(conn, mek, m, { from, myquoted }) => {
     const brand = conn.brand || null;
     const ownerNumber = (brand && brand.ownerNumber) || (Array.isArray(config.OWNER_NUMBER) ? config.OWNER_NUMBER[0] : config.OWNER_NUMBER);
-    const displayName = (brand && brand.botName) || 'A⃟𝐇ΜΔD̰̃~𝐌𝐃-𝐁☯︎𝐓';
+    const displayName = (brand && brand.botName) || 'Cyber-team-913 bot';
 
     // Création d'une vCard (Fiche contact)
     const vcard = 'BEGIN:VCARD\n' +

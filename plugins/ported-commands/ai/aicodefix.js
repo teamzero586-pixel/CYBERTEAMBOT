@@ -30,7 +30,7 @@ module.exports = {
       const resultText = response.data;
 
       // Final reply
-      await extra.reply(`*🧑‍💻 AHMADSHAHZAD MD-BOT Code Fixer*\n\n${resultText}`);
+      await extra.reply(`*🧑‍💻 Cyber-team-913 bot Code Fixer*\n\n${resultText}`);
       await extra.react('✅');
 
     } catch (error) {

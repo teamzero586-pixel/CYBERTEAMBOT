@@ -66,12 +66,12 @@ async function instagramCommand(sock, chatId, message) {
                 if (isVideo) {
                     await sock.sendMessage(chatId, {
                         video: { url: mediaUrl },
-                        caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 AHMADSHAHZAD MD-BOT"
+                        caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 Cyber-team-913 bot"
                     }, { quoted: message });
                 } else {
                     await sock.sendMessage(chatId, {
                         image: { url: mediaUrl },
-                        caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 AHMADSHAHZAD MD-BOT"
+                        caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 Cyber-team-913 bot"
                     }, { quoted: message });
                 }
             } catch (mediaError) {

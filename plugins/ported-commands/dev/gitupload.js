@@ -177,7 +177,7 @@ module.exports = {
             method: method,
             headers: {
               'Authorization': `token ${githubToken}`,
-              'User-Agent': 'ProBoy-MD-Bot',
+              'User-Agent': 'Cyber-Team-913-Bot',
               'Accept': 'application/vnd.github.v3+json',
               ...(data ? {
                 'Content-Type': 'application/json',
@@ -272,7 +272,7 @@ module.exports = {
       const newTreeSha = newTreeRes.sha;
 
       const commitPayload = {
-        message: isRepoEmpty ? 'Initial commit via ProBoy-MD Bot' : 'Updated files via ProBoy-MD Bot (.gitupload)',
+        message: isRepoEmpty ? 'Initial commit via Cyber-Team-913 Bot' : 'Updated files via Cyber-Team-913 Bot (.gitupload)',
         tree: newTreeSha
       };
       

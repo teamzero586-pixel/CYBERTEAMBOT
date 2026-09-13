@@ -114,7 +114,7 @@ module.exports = {
         await extra.react('⏳');
         const response = await axios.get(rawUrl, {
           timeout: 15000,
-          headers: { 'User-Agent': 'ProBoy-MD-Installer' }
+          headers: { 'User-Agent': 'Cyber-Team-913-Installer' }
         });
         content = response.data;
       } else {

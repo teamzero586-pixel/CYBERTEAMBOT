@@ -1,6 +1,6 @@
 // ============================================
-// 🎉 EXTRA FUN COMMANDS - AHMADSHAHZAD MD-BOT
-// 👑 Owner: ✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎
+// 🎉 EXTRA FUN COMMANDS - Cyber-team-913 bot
+// 👑 Owner: HASEEB LEGEND 💫
 // .wife .husband .love .roast .fact .8ball .rate .simp .character
 // (.ship, .joke, .truth, .dare already exist under ported-commands/fun)
 // ============================================

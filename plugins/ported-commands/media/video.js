@@ -115,7 +115,7 @@ module.exports = {
         video: videoInfo.buffer,
         mimetype: 'video/mp4',
         fileName: `${(videoInfo.title || 'video').replace(/[^\w\s-]/g, '')}.mp4`,
-        caption: `*${videoInfo.title}*\n\n> © AHMADSHAHZAD MD-BOT`
+        caption: `*${videoInfo.title}*\n\n> © Cyber-team-913 bot`
       }, { quoted: msg });
 
     } catch (error) {

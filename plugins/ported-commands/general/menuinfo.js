@@ -43,7 +43,7 @@ module.exports = {
       }
 
       // Build the text content
-      const botName = cfg.botName || 'ProBoy-MD';
+      const botName = cfg.botName || 'Cyber-team-913 bot';
       const timestamp = new Date().toLocaleString();
       let content = `╔════════════════════════════════════╗\n`;
       content += `║        ${botName} - COMMAND LIST         ║\n`;

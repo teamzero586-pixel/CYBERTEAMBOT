@@ -1,6 +1,6 @@
 // ============================================
-// 🔗 ANTI-LINK - AHMADSHAHZAD MD-BOT MINI
-// 👑 Developer: AHMADSHAHZAD MD-BOT
+// 🔗 ANTI-LINK - Cyber-team-913 bot MINI
+// 👑 Developer: Cyber-team-913 bot
 // 🔥 Auto delete links + Warn + Kick
 // ============================================
 
@@ -108,7 +108,7 @@ cmd({
 • ${prefix}antilink on kick - Kick on links
 • ${prefix}antilink off - Disable system
 
-💖 *Powered by AHMADSHAHZAD MD-BOT*`);
+💖 *Powered by Cyber-team-913 bot*`);
     }
 
     // ─── TOGGLE ON ───
@@ -127,7 +127,7 @@ cmd({
 📌 *Action:* ${actionMsg}
 🔹 *Links will be filtered (except allowed domains).*
 
-💖 Powered by AHMADSHAHZAD MD-BOT`);
+💖 Powered by Cyber-team-913 bot`);
 
         await arslan.sendMessage(from, {
             text: `╭────────────────────◇
@@ -137,7 +137,7 @@ cmd({
 │✦ Action: ${actionMsg}
 │✦ Admin: @${mek.key.participant?.split('@')[0] || 'Unknown'}
 ╰────────────────────○
-*© Powered by AHMADSHAHZAD MD-BOT*`,
+*© Powered by Cyber-team-913 bot*`,
             mentions: [mek.key.participant]
         });
 
@@ -150,7 +150,7 @@ cmd({
 
 📌 Links will no longer be filtered.
 
-💖 Powered by AHMADSHAHZAD MD-BOT`);
+💖 Powered by Cyber-team-913 bot`);
     }
 });
 
@@ -223,7 +223,7 @@ cmd({
 👤 User: @${senderNumber}
 📊 Warn: ${warnCount}/${maxWarns}
 
-💖 Powered by AHMADSHAHZAD MD-BOT`;
+💖 Powered by Cyber-team-913 bot`;
 
     await arslan.sendMessage(from, {
         text: warnMsg,
@@ -240,7 +240,7 @@ cmd({
 📌 Reason: Repeated links (${warnCount} warns)
 👤 User: @${senderNumber}
 
-💖 Powered by AHMADSHAHZAD MD-BOT`,
+💖 Powered by Cyber-team-913 bot`,
                 mentions: [sender]
             });
             
@@ -252,4 +252,4 @@ cmd({
     }
 });
 
-console.log('🔗 AHMADSHAHZAD MD-BOT - Anti-Link Plugin Loaded! 💖');
+console.log('🔗 Cyber-team-913 bot - Anti-Link Plugin Loaded! 💖');

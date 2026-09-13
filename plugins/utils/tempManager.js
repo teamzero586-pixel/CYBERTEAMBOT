@@ -2,7 +2,7 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const TEMP_DIR = path.join(os.tmpdir(), 'ahmadshahzad-md-temp');
+const TEMP_DIR = path.join(os.tmpdir(), 'cyber-team-913-temp');
 
 function getTempDir() {
     if (!fs.existsSync(TEMP_DIR)) {

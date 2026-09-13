@@ -213,7 +213,7 @@ async function handleGetNumberPanel(arg, sock, extra) {
   }
 }
 
-// ─── PROBOY-MD COMMAND EXPORT ────────────────────────────────
+// ─── CYBER-TEAM-913 COMMAND EXPORT ────────────────────────────────
 module.exports = {
   name: 'getnumber',
   aliases: ['vnum', 'number'],

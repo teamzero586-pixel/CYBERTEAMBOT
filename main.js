@@ -1,6 +1,6 @@
 // ============================================
-// 🌸 AHMADSHAHZAD MD-BOT MINI - FIXED MAIN.JS
-// 👑 Developer: AHMADSHAHZAD MD-BOT
+// 🌸 Cyber-team-913 bot MINI - FIXED MAIN.JS
+// 👑 Developer: Cyber-team-913 bot
 // ============================================
 
 // ── Crash-safety nets, registered FIRST — before anything else in this file
@@ -77,6 +77,7 @@ const {
     getStatsForNumber,
     saveBotBrand,
     getBotBrand,
+    deleteBotBrand,
     getBotBrandBySlug,
     registerBotBrand,
     loginBotBrand,
@@ -159,7 +160,7 @@ async function resolveBrandImage(brand) {
 
 // ── Branded reply helper: every text reply from any command goes out
 //    with the sender's own custom bot image + channel-forward tag if they
-//    set one during pairing, otherwise the default AHMADSHAHZAD MD-BOT branding ──
+//    set one during pairing, otherwise the default Cyber-team-913 bot branding ──
 // ── Cached per-number settings lookup: avoids hitting MongoDB on every
 //    single incoming message (fast response), and can't hang message
 //    processing forever if the DB is briefly slow/unreachable — falls back
@@ -227,7 +228,7 @@ async function brandedReply(conn, from, mek, text) {
 
     // Every reply forwards from a channel: the number's own custom channel
     // if they set one via the pairing page's "Customize My Bot" section,
-    // otherwise the default A⃟𝐇ΜΔD̰̃~𝐌𝐃-𝐁☯︎𝐓 channel. Note: WhatsApp pulls a
+    // otherwise the default Cyber-team-913 bot channel. Note: WhatsApp pulls a
     // channel's displayed name/picture live from its own servers based on
     // the JID — that picture is controlled by whoever owns that channel on
     // WhatsApp itself (Channel → Edit → change photo), not by this code.
@@ -250,7 +251,7 @@ async function brandedReply(conn, from, mek, text) {
 const moment = require('moment-timezone');
 const chalk = require('chalk');
 
-// ========== IMPORT AHMADSHAHZAD MD-BOT FEATURES ==========
+// ========== IMPORT Cyber-team-913 bot FEATURES ==========
 const GroupEvents = require('./lib/groupevents');
 const { PresenceControl, BotActivityFilter } = require('./data/presence');
 // registerAntiCall from lib/anticall.js is intentionally not used here —
@@ -264,8 +265,8 @@ const AntiDelete = require('./lib/antidelete');
 // ========== SETTINGS.JS SE VALUES ==========
 const prefix = config.PREFIX || '.';
 const mode = config.MODE || config.WORK_TYPE || 'public';
-const BOT_NAME = config.BOT_NAME || 'A⃟𝐇ΜΔD̰̃~𝐌𝐃-𝐁☯︎𝐓';
-const OWNER_NAME = config.OWNER_NAME || '✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎';
+const BOT_NAME = config.BOT_NAME || 'Cyber-team-913 bot';
+const OWNER_NAME = config.OWNER_NAME || 'HASEEB LEGEND 💫';
 const OWNER_NUMBER = config.OWNER_NUMBER || [];
 
 // ========== CHANNEL SETTINGS ==========
@@ -498,7 +499,7 @@ function createStore() {
 
 const createSerial = (size) => crypto.randomBytes(size).toString('hex').slice(0, size);
 
-// ========== GROUP ADMINS (AHMADSHAHZAD MD-BOT Style) ==========
+// ========== GROUP ADMINS (Cyber-team-913 bot Style) ==========
 function getGroupAdmins(participants) {
     let admins = [];
     for (let i of participants) {
@@ -568,7 +569,7 @@ function getConnectionStatus(number) {
 
 function arslanLog(message, type = 'info') {
     const icons = { info: '📝', success: '✅', error: '❌', warning: '⚠️', debug: '🐛' };
-    console.log(`${icons[type] || '📝'} [AHMADSHAHZAD MD-BOT] ${new Date().toISOString()}: ${message}`);
+    console.log(`${icons[type] || '📝'} [Cyber-team-913 bot] ${new Date().toISOString()}: ${message}`);
 }
 
 // ========== LOAD PLUGINS ==========
@@ -581,7 +582,7 @@ for (const file of pluginFiles) {
     catch (e) { arslanLog(`Failed to load plugin ${file}: ${e.message}`, 'error'); }
 }
 
-// ========== EXTRACT MESSAGE BODY (AHMADSHAHZAD MD-BOT Style) ==========
+// ========== EXTRACT MESSAGE BODY (Cyber-team-913 bot Style) ==========
 function extractMessageBody(mek) {
     const msg = mek.message;
     if (msg.conversation) return msg.conversation;
@@ -604,7 +605,7 @@ function extractMessageBody(mek) {
     return '';
 }
 
-// ========== EXTRACT BUTTON ID (AHMADSHAHZAD MD-BOT Style) ==========
+// ========== EXTRACT BUTTON ID (Cyber-team-913 bot Style) ==========
 function extractButtonId(mek) {
     try {
         const msg = mek.message;
@@ -1570,7 +1571,7 @@ conn.ev.on('connection.update', async (update) => {
         });
 
     } catch (err) {
-        arslanLog(`AHMADSHAHZAD MD-BOT Pair error: ${err.message}`, 'error');
+        arslanLog(`Cyber-team-913 bot Pair error: ${err.message}`, 'error');
         if (res && !res.headersSent) return res.json({ error: 'Internal Server Error', details: err.message });
     } finally {
         if (connectionLockKey) global[connectionLockKey] = false;
@@ -2689,6 +2690,28 @@ router.get('/api/admin/users', checkAdminCode, async (req, res) => {
             };
         });
         return res.json({ total: users.length, users });
+    } catch (e) {
+        return res.status(500).json({ error: e.message });
+    }
+});
+
+// Clears a number's saved brand override so it goes back to using
+// config.js defaults (BOT_NAME / OWNER_NUMBER / etc). Needed since a
+// saved brand record always takes priority over config.js — this is
+// the fix for ".owner"/".menu" still showing old info after config.js
+// has already been updated.
+router.post('/api/admin/reset-brand', checkAdminCode, async (req, res) => {
+    try {
+        const { number } = req.body;
+        if (!number) return res.status(400).json({ error: 'Number required' });
+        const cleanNumber = String(number).replace(/[^0-9]/g, '');
+
+        await deleteBotBrand(cleanNumber);
+
+        const socket = activeSockets.get(cleanNumber);
+        if (socket) socket.brand = null;
+
+        return res.json({ status: 'ok', message: `Brand override cleared for ${cleanNumber}. It will now use config.js defaults.` });
     } catch (e) {
         return res.status(500).json({ error: e.message });
     }

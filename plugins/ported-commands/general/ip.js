@@ -28,7 +28,7 @@ module.exports = {
         return extra.reply(`❌ IP details nahi mil saki. Sahi IP address ya domain name enter karein.`);
       }
 
-      const resultText = `*🌐 AHMADSHAHZAD MD-BOT IP Lookup*\n\n` +
+      const resultText = `*🌐 Cyber-team-913 bot IP Lookup*\n\n` +
         `🎯 *Target:* ${query}\n` +
         `📍 *IP:* ${data.query}\n` +
         `🌍 *Country:* ${data.country} (${data.countryCode})\n` +

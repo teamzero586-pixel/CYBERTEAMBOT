@@ -1,7 +1,7 @@
-# AHMADSHAHZAD MD-BOT
+# CYBER-TEAM-913 BOT
 
-AHMADSHAHZAD MD-BOT is a multi-device WhatsApp bot designed to provide enhanced
-functionality and automation for WhatsApp users. Developed by **✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎**,
+Cyber-team-913 bot is a multi-device WhatsApp bot designed to provide enhanced
+functionality and automation for WhatsApp users. Developed by **HASEEB LEGEND 💫**,
 this repository offers an easy-to-deploy solution for integrating with
 WhatsApp through a bot interface.
 

@@ -83,7 +83,7 @@ module.exports = {
 
       pendingGreets.add(extra.sender);
       try {
-        const botName = config.BOT_NAME || 'A⃟𝐇ΜΔD̰̃~𝐌𝐃-𝐁☯︎𝐓';
+        const botName = config.BOT_NAME || 'Cyber-team-913 bot';
         const newsletterJid = config.CHANNEL_JID;
         const caption = message || `👋 Hello! Welcome to ${botName}.`;
 

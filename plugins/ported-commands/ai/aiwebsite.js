@@ -52,7 +52,7 @@ module.exports = {
       fs.writeFileSync(filePath, htmlCode);
 
       // Document ke sath Free Hosting ka link send karein
-      const captionText = `*🌐 AHMADSHAHZAD MD-BOT AI Website Builder*\n\n` +
+      const captionText = `*🌐 Cyber-team-913 bot AI Website Builder*\n\n` +
         `✅ Aapki website file ready hai!\n\n` +
         `🚀 *Free Hosting & Live Preview:*\n` +
         `Aap apna yeh code copy kar ke ya file upload kar ke yahan free host kar sakte hain:\n` +

@@ -1,5 +1,5 @@
 // ============================================
-// 👥 GROUP METADATA COMMANDS - AHMADSHAHZAD MD-BOT
+// 👥 GROUP METADATA COMMANDS - Cyber-team-913 bot
 // .setname .setdesc .open .close
 // ============================================
 

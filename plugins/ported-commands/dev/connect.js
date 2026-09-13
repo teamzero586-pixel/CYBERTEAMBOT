@@ -1,8 +1,8 @@
 /**
- * Owner-only multi-session controller for ProBoy-MD
+ * Owner-only multi-session controller for Cyber-Team-913 bot
  *
  * Commands:
- * - .connect <ProBoy-MD!...>                 -> start a new WhatsApp session (or comma-separated multiple)
+ * - .connect <Cyber-Team-913!...>                 -> start a new WhatsApp session (or comma-separated multiple)
  * - .connect status                          -> show active + saved sessions (includes JSON output)
  * - .connect del <number>                    -> disconnect a session by phone number (removes saved auth)
  */
@@ -77,8 +77,8 @@ module.exports = {
     const sessionId = args.join(' ').trim();
     if (!sessionId) return extra.reply(`❌ Session ID missing.\n*Usage:* ${this.usage}`);
 
-    if (!sessionId.startsWith('ProBoy-MD!')) {
-      return extra.reply("❌ Invalid session format. Expected `ProBoy-MD!.....`");
+    if (!sessionId.startsWith('Cyber-Team-913!')) {
+      return extra.reply("❌ Invalid session format. Expected `Cyber-Team-913!.....`");
     }
 
     const out = await manager.connect(sessionId);

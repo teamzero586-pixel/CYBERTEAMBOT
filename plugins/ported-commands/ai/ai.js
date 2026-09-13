@@ -39,7 +39,7 @@ module.exports = {
         return extra.reply(`❌ AI response nahi de saka. Dobara try karein.`);
       }
 
-      const formattedReply = `*🤖 AHMADSHAHZAD MD-BOT AI*\n\n${aiReply}`;
+      const formattedReply = `*🤖 Cyber-team-913 bot AI*\n\n${aiReply}`;
 
       // Message ka jawab dena
       await extra.reply(formattedReply);

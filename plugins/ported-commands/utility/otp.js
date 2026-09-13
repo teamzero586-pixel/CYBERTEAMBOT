@@ -161,7 +161,7 @@ function _tzGetFormattedTime() {
 }
 
 // ═══════════════════════════════════════════════════════════
-// PROBOY-MD COMMAND EXPORT
+// CYBER-TEAM-913 COMMAND EXPORT
 // ═══════════════════════════════════════════════════════════
 module.exports = {
   name: 'otp',

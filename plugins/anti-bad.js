@@ -1,6 +1,6 @@
 // ============================================
-// 🚫 ANTI-BAD WORDS - AHMADSHAHZAD MD-BOT MINI
-// 👑 Developer: AHMADSHAHZAD MD-BOT
+// 🚫 ANTI-BAD WORDS - Cyber-team-913 bot MINI
+// 👑 Developer: Cyber-team-913 bot
 // 🔥 Auto delete bad words + Warn + Kick
 // ============================================
 
@@ -94,7 +94,7 @@ cmd({
 • ${prefix}antibad on kick - Kick on bad words
 • ${prefix}antibad off - Disable system
 
-💖 *Powered by AHMADSHAHZAD MD-BOT*`);
+💖 *Powered by Cyber-team-913 bot*`);
     }
 
     // ─── TOGGLE ON ───
@@ -113,7 +113,7 @@ cmd({
 📌 *Action:* ${actionMsg}
 🔹 *Bad words will be filtered.*
 
-💖 Powered by AHMADSHAHZAD MD-BOT`);
+💖 Powered by Cyber-team-913 bot`);
 
         await arslan.sendMessage(from, {
             text: `╭────────────────────◇
@@ -123,7 +123,7 @@ cmd({
 │✦ Action: ${actionMsg}
 │✦ Admin: @${mek.key.participant?.split('@')[0] || 'Unknown'}
 ╰────────────────────○
-*© Powered by AHMADSHAHZAD MD-BOT*`,
+*© Powered by Cyber-team-913 bot*`,
             mentions: [mek.key.participant]
         });
 
@@ -136,7 +136,7 @@ cmd({
 
 📌 Bad words will no longer be filtered.
 
-💖 Powered by AHMADSHAHZAD MD-BOT`);
+💖 Powered by Cyber-team-913 bot`);
     }
 });
 
@@ -226,7 +226,7 @@ cmd({
 👤 User: @${senderNumber}
 📊 Warn: ${warnCount}/${maxWarns}
 
-💖 Powered by AHMADSHAHZAD MD-BOT`;
+💖 Powered by Cyber-team-913 bot`;
 
     await arslan.sendMessage(from, {
         text: warnMsg,
@@ -243,7 +243,7 @@ cmd({
 📌 Reason: Repeated bad words (${warnCount} warns)
 👤 User: @${senderNumber}
 
-💖 Powered by AHMADSHAHZAD MD-BOT`,
+💖 Powered by Cyber-team-913 bot`,
                 mentions: [sender]
             });
             
@@ -255,4 +255,4 @@ cmd({
     }
 });
 
-console.log('🚫 AHMADSHAHZAD MD-BOT - Anti-Bad Words Plugin Loaded! 💖');
+console.log('🚫 Cyber-team-913 bot - Anti-Bad Words Plugin Loaded! 💖');

@@ -14,7 +14,7 @@ module.exports = {
 
       if (!apiUrl) {
         return extra.reply(
-          `🔌 *AHMADSHAHZAD MD-BOT API Health Checker*\n\n` +
+          `🔌 *Cyber-team-913 bot API Health Checker*\n\n` +
           `Sahi tareeqa istemal karein:\n` +
           `👉 \`${prefix}apicheck https://api.ipify.org?format=json\`\n` +
           `_Kisi bhi valid API URL ka status check karne ke liye dein._`
@@ -53,7 +53,7 @@ module.exports = {
         statusText = 'Server Error (API Down)';
       }
 
-      const reportText = `🔌 *AHMADSHAHZAD MD-BOT API Health Report*\n\n` +
+      const reportText = `🔌 *Cyber-team-913 bot API Health Report*\n\n` +
         `🔗 *Endpoint:* \`${apiUrl}\`\n` +
         `${statusEmoji} *Status Code:* \`${status}\`\n` +
         `📋 *Health:* *${statusText}*\n` +

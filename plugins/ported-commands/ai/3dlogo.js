@@ -36,7 +36,7 @@ module.exports = {
             }
 
             // Send all generated images
-            const botName = config.BOT_NAME || 'ProBoy-MD';
+            const botName = config.BOT_NAME || 'Cyber-team-913 bot';
             for (let i = 0; i < images.length; i++) {
                 const imageUrl = images[i];
                 const caption = i === 0 

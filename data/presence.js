@@ -1,6 +1,6 @@
 // ============================================
 // 📁 data/presence.js - PRESENCE CONTROL
-// 👑 Developer: ✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎
+// 👑 Developer: HASEEB LEGEND 💫
 // 🔥 Auto typing, recording, online status
 // ============================================
 

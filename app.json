@@ -1,9 +1,9 @@
 {
-  "name": "AHMADSHAHZAD MD-BOT",
-  "description": "WhatsApp bot with pairing-code login, group admin tools, and an admin dashboard — powered by ✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎",
+  "name": "Cyber-team-913 Bot",
+  "description": "WhatsApp bot with pairing-code login, group admin tools, and an admin dashboard — powered by HASEEB LEGEND 💫",
   "logo": "",
-  "repository": "https://github.com/YOUR-GITHUB-USERNAME/AhmadShahzad-MD-Bot",
-  "keywords": ["AHMADSHAHZAD MD-BOT", "whatsapp-bot"],
+  "repository": "https://github.com/YOUR-GITHUB-USERNAME/Cyber-Team-913-Bot",
+  "keywords": ["Cyber-team-913 bot", "whatsapp-bot"],
   "stack": "heroku-22",
   "success_url": "/",
   "buildpacks": [
@@ -29,7 +29,7 @@
     },
     "ADMIN_CODE": {
       "description": "Password for the /admin dashboard login — change this from the default before going live",
-      "value": "ahmadmdbot0127",
+      "value": "Hackeryou1913",
       "required": false
     },
     "APP_URL": {
@@ -39,7 +39,7 @@
     },
     "MESSAGE": {
       "description": "Message attached with the session ID",
-      "value": "⚡ BY || ✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎ ⚡",
+      "value": "⚡ BY || HASEEB LEGEND 💫 ⚡",
       "required": false
     }
   }

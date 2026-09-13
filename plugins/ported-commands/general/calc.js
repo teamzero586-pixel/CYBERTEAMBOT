@@ -35,7 +35,7 @@ module.exports = {
         return extra.reply(`❌ Calculation solve nahi ho saki. Apni expression check karein.`);
       }
 
-      const resultText = `*🧮 AHMADSHAHZAD MD-BOT Calculator*\n\n` +
+      const resultText = `*🧮 Cyber-team-913 bot Calculator*\n\n` +
         `📥 *Sawal:* \`${expression}\`\n` +
         `📤 *Jawab:* \`${result}\``;
 

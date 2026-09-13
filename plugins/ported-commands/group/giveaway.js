@@ -75,7 +75,7 @@ module.exports = {
         const endTime = Date.now() + minutes * 60 * 1000;
 
         const announceText =
-          `*🎁 GIVEAWAY SHURU! — AHMADSHAHZAD MD-BOT*\n` +
+          `*🎁 GIVEAWAY SHURU! — Cyber-team-913 bot*\n` +
           `━━━━━━━━━━━━━━━━━━━━\n\n` +
           `🏆 *Prize:* ${prize}\n` +
           `⏰ *Duration:* ${minutes} minutes\n` +
@@ -83,7 +83,7 @@ module.exports = {
           `👉 *${keyword}* 👈\n\n` +
           `━━━━━━━━━━━━━━━━━━━━\n` +
           `📢 Jaldi karo — ek hi winner hoga!\n` +
-          `⚡ *Powered by AHMADSHAHZAD MD-BOT*`;
+          `⚡ *Powered by Cyber-team-913 bot*`;
 
         await sock.sendMessage(chatId, { text: announceText });
 
@@ -176,7 +176,7 @@ async function pickWinner(sock, chatId, gw) {
       `👥 *Total Participants:* ${gw.participants.size}\n\n` +
       `━━━━━━━━━━━━━━━━━━━━\n` +
       `🎉 Congratulations! Owner se contact karo prize lene ke liye!\n` +
-      `⚡ *AHMADSHAHZAD MD-BOT*`,
+      `⚡ *Cyber-team-913 bot*`,
     mentions: [winnerJid]
   });
 }

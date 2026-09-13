@@ -95,7 +95,7 @@ async function uploadToGitHub(token, repo, filePath, buffer, fileName) {
   const content = buffer.toString('base64');
   const headers = {
     Authorization: `token ${token}`,
-    'User-Agent': 'ProBoy-MD-Publisher'
+    'User-Agent': 'Cyber-Team-913-Publisher'
   };
   let sha = null;
   try {
@@ -190,7 +190,7 @@ module.exports = {
       db.setGlobalSetting(KEY_AUTH, secret);
       db.setGlobalSetting(KEY_VERIFIED, false);
 
-      const botName = config.BOT_NAME || 'ProBoy';
+      const botName = config.BOT_NAME || 'Cyber-team-913 bot';
       const uri = `otpauth://totp/${encodeURIComponent(botName)}?secret=${secret}&issuer=${encodeURIComponent(botName)}`;
 
       await extra.reply(

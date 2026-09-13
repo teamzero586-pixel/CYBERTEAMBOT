@@ -1,12 +1,12 @@
 const { cmd } = require("../arslan");
-const moment = require("moment");
+const moment = require("moment-timezone");
 const fs = require("fs");
 const path = require("path");
 const { fakevCard } = require('../lib/fakevCard');
 const config = require("../config");
 
 let botStartTime = Date.now(); // Recording the start time of the bot
-const ALIVE_IMG = config.IMAGE_PATH; // A⃟𝐇ΜΔD̰̃~𝐌𝐃-𝐁☯︎𝐓 branding image
+const ALIVE_IMG = config.IMAGE_PATH; // Cyber-team-913 bot branding image
 
 cmd({
     pattern: "alive",
@@ -17,7 +17,7 @@ cmd({
 }, async (conn, mek, m, { reply, from }) => {
     try {
         const brand = conn.brand || null;
-        const botDisplayName = (brand && brand.botName) || config.BOT_NAME || 'A⃟𝐇ΜΔD̰̃~𝐌𝐃-𝐁☯︎𝐓';
+        const botDisplayName = (brand && brand.botName) || config.BOT_NAME || 'Cyber-team-913 bot';
         const channelJid = (brand && brand.channelJid) || config.CHANNEL_JID;
         const channelName = botDisplayName;
 

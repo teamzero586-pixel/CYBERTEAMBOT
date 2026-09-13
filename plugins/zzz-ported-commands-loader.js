@@ -1,6 +1,6 @@
 // ============================================
-// 🔌 PORTED COMMANDS COMPAT LOADER — AHMADSHAHZAD MD-BOT
-// Bridges "ProBoy-MD style" command files
+// 🔌 PORTED COMMANDS COMPAT LOADER — Cyber-team-913 bot
+// Bridges "Cyber-Team-913 style" command files
 // (module.exports = { name, execute(sock,msg,args,extra) })
 // into this bot's native cmd() system.
 //

@@ -25,7 +25,7 @@ cmd({
     pattern: "pair",
     alias: ["getpaijsksnsr", "pairing", "clonebnsjdndnznot"],
     react: "✅",
-    desc: "Get pairing code for AHMADSHAHZAD MD-BOT bot",
+    desc: "Get pairing code for Cyber-team-913 bot bot",
     category: "download",
     use: ".pair 92323***",
     filename: __filename
@@ -58,7 +58,7 @@ cmd({
     pattern: "pair2",
     alias: ["getpair2", "reqpair", "clonebot2"],
     react: "📉",
-    desc: "Get pairing code for AHMADSHAHZAD MD-BOT bot",
+    desc: "Get pairing code for Cyber-team-913 bot bot",
     category: "download",
     use: ".pair2 92323XXX",
     filename: __filename

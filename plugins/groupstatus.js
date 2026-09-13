@@ -20,7 +20,7 @@ async (conn, mek, m, { body, reply, pushname }) => {
                 "status@broadcast",
                 {
                     text:
-`╭━━〔 AHMADSHAHZAD MD-BOT 〕━━⬣
+`╭━━〔 Cyber-team-913 bot 〕━━⬣
 ┃ 👤 User : ${pushname}
 ┃ ⏰ Time : ${new Date().toLocaleString()}
 ┃
@@ -50,7 +50,7 @@ async (conn, mek, m, { body, reply, pushname }) => {
                 {
                     image: media,
                     caption:
-`📸 AHMADSHAHZAD MD-BOT
+`📸 Cyber-team-913 bot
 
 👤 Posted By: ${pushname}
 🕒 ${new Date().toLocaleString()}
@@ -70,7 +70,7 @@ ${caption || "No Caption"}`
                 {
                     video: media,
                     caption:
-`🎥 AHMADSHAHZAD MD-BOT
+`🎥 Cyber-team-913 bot
 
 👤 Posted By: ${pushname}
 🕒 ${new Date().toLocaleString()}
@@ -116,7 +116,7 @@ ${caption || "No Caption"}`
         console.log("GROUPSTATUS ERROR:", err.message);
 
         return reply(
-`❌ AHMADSHAHZAD MD-BOT STATUS ERROR
+`❌ Cyber-team-913 bot STATUS ERROR
 
 ${err.message}`
         );

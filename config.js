@@ -6,12 +6,12 @@
 // ██║  ██║██║  ██║███████║███████╗██║  ██║██║  ████║     ██║ ╚═╝ ██║██████╔╝
 // ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═══╝    ╚═╝     ╚═╝╚═════╝ 
 // ═══════════════════════════════════════════════════════════════════════════
-//                    AHMADSHAHZAD MD-BOT - BOT CONFIGURATION
+//                    Cyber-team-913 bot - BOT CONFIGURATION
 // ═══════════════════════════════════════════════════════════════════════════
 
 // ============================================
-// 🔥 AHMADSHAHZAD MD-BOT - COMPLETE SETTINGS
-// 👑 Developer: ✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎
+// 🔥 Cyber-team-913 bot - COMPLETE SETTINGS
+// 👑 Developer: HASEEB LEGEND 💫
 // 🔥 GitHub Session System + All Features
 // ============================================
 
@@ -53,7 +53,7 @@ module.exports = {
      *   → Add: ADMIN_CODE = <a strong password>
      * @type {string}
      */
-    ADMIN_CODE: process.env.ADMIN_CODE || 'ahmadmdbot0127',
+    ADMIN_CODE: process.env.ADMIN_CODE || 'Hackeryou1913',
 
     // ═══════════════════════════════════════════
     //  💤 KEEP-ALIVE (stops Heroku Eco dynos sleeping)
@@ -81,14 +81,12 @@ module.exports = {
     // ═══════════════════════════════════════════
     /** 
      * @description MongoDB Atlas connection string.
-     * SECURITY: a real, working DB credential was hardcoded here as a fallback
-     * in the original project. That is a live secret sitting in source control —
-     * it has been removed. Set MONGODB_URI as an environment variable
-     * (Heroku Config Var, .env file, etc.); do not put a real connection
-     * string back in this file.
+     * Hardcoded here at your request. Just be aware: if this repo is ever
+     * made public, or shared, this password is exposed with it — you'd
+     * want to rotate the MongoDB password if that ever happens.
      * @type {string}
      */
-    MONGODB_URI: process.env.MONGODB_URI || '',
+    MONGODB_URI: process.env.MONGODB_URI || 'mongodb+srv://bakavat418_db_user:0TLU1bJwRjSMiQgL@cluster0.jhz5lza.mongodb.net',
 
     // ═══════════════════════════════════════════════════════════════════════
     //  🤖 BOT IDENTITY
@@ -165,7 +163,7 @@ module.exports = {
      * @description Bot footer text
      * @type {string}
      */
-    BOT_FOOTER: process.env.BOT_FOOTER || '© POWERED BY AHMADSHAHZAD MD-BOT',
+    BOT_FOOTER: process.env.BOT_FOOTER || '© POWERED BY CYBER-TEAM-913',
 
     // ═══════════════════════════════════════════
     //  👁️ STATUS AUTOMATION
@@ -312,7 +310,7 @@ module.exports = {
     // ═══════════════════════════════════════════
 
     /**
-     * @description Public AHMADSHAHZAD MD-BOT channel — shown in .menu/.alive/.about etc.
+     * @description Public Cyber-team-913 bot channel — shown in .menu/.alive/.about etc.
      * @type {string}
      */
     CHANNEL_JID: process.env.CHANNEL_JID || '120363411920778978@newsletter',
@@ -413,7 +411,7 @@ module.exports = {
      * @description Repository link
      * @type {string}
      */
-    REPO: process.env.REPO || 'https://github.com/YOUR-GITHUB-USERNAME/AHMADSHAHZAD MD-BOT',
+    REPO: process.env.REPO || 'https://github.com/YOUR-GITHUB-USERNAME/Cyber-Team-913-Bot',
 
     // ═══════════════════════════════════════════
     //  🐛 DEBUG & LOGGING
@@ -488,8 +486,8 @@ module.exports = {
 
 /**
  * @module settings
- * @description AHMADSHAHZAD MD-BOT Configuration Module
+ * @description Cyber-team-913 bot Configuration Module
  * @version 2.0.0
- * @author ✌︎︎𝑨𝑯𝑴𝑨𝑫☠︎︎𝑺𝑯𝑨𝑯𝒁𝑨𝑫✌︎︎
+ * @author HASEEB LEGEND 💫
  * @license MIT
  */
