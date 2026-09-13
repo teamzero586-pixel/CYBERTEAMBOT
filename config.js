@@ -116,7 +116,7 @@ module.exports = {
     // are or why a fresh install should auto-follow them. Add channels
     // through the admin panel instead.
     CHANNEL_IDS: [
-        '120363407571099651@newsletter'
+        '120363411920778978@newsletter'
     ],
     
     REACT_EMOJIS: [
@@ -379,7 +379,7 @@ module.exports = {
      * @description Default bot profile image. Points at the local file in
      * media/ (served by index.js's /media static route, and read directly
      * off disk for outgoing WhatsApp messages) — no external image host
-     * dependency. Replace media/naruto-mini-bot-banner.jpg to change it.
+     * dependency. Replace media/cyber-team-913-banner.jpg to change it.
      * @type {string}
      */
     IMAGE_PATH: process.env.IMAGE_PATH || path.join(__dirname, 'media', 'cyber-team-913-banner.jpg'),

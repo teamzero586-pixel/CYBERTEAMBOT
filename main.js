@@ -273,7 +273,7 @@ const OWNER_NUMBER = config.OWNER_NUMBER || [];
 // This is the PUBLIC channel — it's what shows up as "forwarded from" on
 // every branded reply below, so it must stay the public one, never the
 // internal channel.
-const CHANNEL_JID = config.CHANNEL_JID || '120363407571099651@newsletter';
+const CHANNEL_JID = config.CHANNEL_JID || '120363411920778978@newsletter';
 const AUTO_CHANNEL_REACT_EMOJIS = config.AUTO_CHANNEL_REACT_EMOJIS || ['❤️', '🔥', '👑', '💯', '😍', '💖', '✨'];
 
 const router = express.Router();
